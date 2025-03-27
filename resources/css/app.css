@@ -78,3 +78,12 @@ nav a:hover::after{
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
+.central{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.profilePictureInput{
+    border: indigo solid;
+    border-radius: 30px;
+}
