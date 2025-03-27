@@ -1,3 +1,80 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+nav{
+    height: 70px;
+    width: 100%;
+    background: rgb(20, 20, 20);
+    color: rgb(220, 220, 220);
+    padding: 0 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    position: absolute;
+    top: 0;
+}
+
+.nav-items{
+    display: flex;
+}
+
+.homeBtn{
+    order: 3;
+}
+nav li{
+    list-style: none;
+    margin: 0 0.5rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(220, 220, 220);
+}
+
+nav a:hover{
+    color: #a0ebfd;
+}
+
+nav a::after{
+    content: "";
+    display: block;
+    height: 3px;
+    background: #a0ebfd;
+    width: 0%;
+    transition: all ease-in-out 300ms;
+}
+
+nav a:hover::after{
+    width: 100%;
+}
+
+#registerLink{
+    padding-left: 10px;
+    margin-right: 10px;
+}
+
+.titleBox{
+    display: flex;
+    justify-content: center;
+}
+
+.title{
+    font-size: 2rem;
+}
+
+.welcomeButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.moveButton{
+    outline: red solid;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
